@@ -3,6 +3,9 @@
 <%= render @article %>
 
 <div>
+  <h3>Comments</h3>
+  <%= render @article.comments %>
+
   <%= link_to "Edit this article", edit_article_path(@article) %> |
   <%= link_to "Back to articles", articles_path %>
 
