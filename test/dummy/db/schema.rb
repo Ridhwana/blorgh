@@ -26,5 +26,5 @@ ActiveRecord::Schema[8.0].define(version: 2025_07_13_191816) do
     t.index ["article_id"], name: "index_blorgh_comments_on_article_id"
   end
 
-  add_foreign_key "blorgh_comments", "articles"
+  add_foreign_key "blorgh_comments", "blorgh_articles", column: "article_id"
 end
