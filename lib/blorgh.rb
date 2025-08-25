@@ -5,6 +5,6 @@ module Blorgh
   mattr_accessor :author_class
 
   def self.author_class
-    @@author_class.constantize
+    @@author_class_name.constantize
   end
 end
